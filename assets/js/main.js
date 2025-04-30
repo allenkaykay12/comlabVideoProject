@@ -236,8 +236,10 @@ const video = document.querySelector("#mainVideo video"); // get the main video 
 const choices = document.getElementById("choices"); // get the choices element to display then or hide them
 
 video.addEventListener("ended", () => {
-  // Show choices to the user after the main video ends
-  choices.style.display = "block";
+  // Only show choices if it's the main video
+  if (video.currentSrc.includes("mainVideo.mp4")) {
+      choices.style.display = "flex";
+  }
 });
 
 // Add event listeners to the choice buttons
@@ -248,9 +250,9 @@ function playVideo(direction) {
   // Determine the video source based on the user's choice
   // "left" or "right"
   if (direction === "left") {
-    videoSource = "./assets/video/left.mp4";
+    videoSource = "./assets/video/left_be_happy.mp4";
   } else if (direction === "right") {
-    videoSource = "./assets/video/right.mp4";
+    videoSource = "./assets/video/right_fit_in_to_society.mp4";
   }
 
   // Load and play the selected video
