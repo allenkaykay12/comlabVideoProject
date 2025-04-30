@@ -921,3 +921,44 @@ section,
   margin-top: 1rem;
   color: black;
 }
+
+/* Style for the Behind the Scenes video section */
+.bst {
+  padding-bottom: 60px; /* Add some padding below the section */
+}
+
+.bts-video {
+  margin-top: 30px; /* Add some space between the title and the video */
+  text-align: center; /* Center the video iframe */
+}
+
+.bts-video iframe {
+  max-width: 100%; /* Make the iframe responsive within its container */
+  width: 90%; /* Adjust the width as needed */
+  height: 600px; /* Maintain aspect ratio */
+  border: 0; /* Remove default iframe border */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+/* Optional: Adjust styles for smaller screens */
+@media (max-width: 768px) {
+  .bts-video iframe {
+    width: 100%; /* Make it full width on smaller screens */
+  }
+}
+
+.video {
+  padding-bottom: 60px; /* Add some padding below the section */
+}
+
+.video {
+  margin-top: 30px; /* Add some space between the title and the video */
+}
+
+.video iframe {
+  max-width: 100%; /* Make the iframe responsive within its container */
+  width: 90%; /* Adjust the width as needed */
+  height: 600px; /* Maintain aspect ratio */
+  border: 0; /* Remove default iframe border */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
