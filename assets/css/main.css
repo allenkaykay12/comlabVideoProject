@@ -768,17 +768,18 @@ canvas {
 
 .home-content h2 {
   /* Styles the main heading */
-  font-size: 2.3rem; /* Sets font size */
+  font-size: clamp(1.5rem, 5vw, 3rem);
   margin: 0; /* Removes margin */
-  color: black; /* Text color */
-  text-shadow: 2px 2px 6px rgb(144, 140, 140); /* Adds a shadow for better readability */
+  color: white; /* Text color */
+  text-shadow: 4px 4px 6px black; /* Adds a shadow for better readability */
 }
 
 .home-content p {
   /* Styles the paragraph text */
-  font-size: 1.5rem; /* Sets font size */
+  font-size: clamp(1rem, 1.5vw, 2rem); /* Responsive font size */
   margin-top: 1rem; /* Adds space above the paragraph */
-  color: black; /* Text color */
+  color: white; /* Text color */
+  text-shadow: 4px 4px 6px black;
 }
 
 /*--------------------------------------------------------------
