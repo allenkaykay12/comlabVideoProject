@@ -1,4 +1,3 @@
-
 /**
 * Template Name: Gp
 * Template URL: https://bootstrapmade.com/gp-free-multipurpose-html-bootstrap-template/
@@ -72,7 +71,9 @@
 --------------------------------------------------------------*/
 body {
   color: var(--default-color); /* Sets the default text color for the body */
-  background-color: var(--background-color); /* Sets the default background color for the body */
+  background-color: var(
+    --background-color
+  ); /* Sets the default background color for the body */
   font-family: var(--default-font); /* Applies the default font family */
 }
 
@@ -83,7 +84,11 @@ a {
 }
 
 a:hover {
-  color: color-mix(in srgb, var(--accent-color), transparent 25%); /* Slightly fades the accent color on link hover */
+  color: color-mix(
+    in srgb,
+    var(--accent-color),
+    transparent 25%
+  ); /* Slightly fades the accent color on link hover */
   text-decoration: none; /* Ensures no underline appears on hover */
 }
 
@@ -135,11 +140,14 @@ h6 {
   height: 24px; /* Sets height of the spinner */
   margin: 0 10px -6px 0; /* Positions the spinner relative to text */
   border: 3px solid var(--accent-color); /* Sets the border color */
-  border-top-color: var(--surface-color); /* Makes the top transparent for the spinning effect */
+  border-top-color: var(
+    --surface-color
+  ); /* Makes the top transparent for the spinning effect */
   animation: php-email-form-loading 1s linear infinite; /* Applies the loading animation */
 }
 
-@keyframes php-email-form-loading { /* Defines the loading spinner animation */
+@keyframes php-email-form-loading {
+  /* Defines the loading spinner animation */
   0% {
     transform: rotate(0deg); /* Start rotation */
   }
@@ -153,11 +161,20 @@ h6 {
 # Global Header
 --------------------------------------------------------------*/
 .header {
-  --background-color: rgba(0, 0, 0, 0.8); /* Default header background (semi-transparent black) */
+  --background-color: rgba(
+    0,
+    0,
+    0,
+    0.8
+  ); /* Default header background (semi-transparent black) */
   --heading-color: #ffffff; /* Default heading color in header (white) */
   --contrast-color: #ffffff; /* Default contrast color in header (white) */
-  color: var(--default-color); /* Inherits global default color (can be overridden) */
-  background-color: var(--background-color); /* Applies the header-specific background */
+  color: var(
+    --default-color
+  ); /* Inherits global default color (can be overridden) */
+  background-color: var(
+    --background-color
+  ); /* Applies the header-specific background */
   padding: 10px 0; /* Vertical padding for the header */
   transition: all 0.5s; /* Smooth transition for changes (like background on scroll) */
   z-index: 997; /* Ensures header stays above most other content */
@@ -180,7 +197,9 @@ h6 {
 }
 
 .header .logo span {
-  color: var(--accent-color); /* Applies accent color to the span within the logo */
+  color: var(
+    --accent-color
+  ); /* Applies accent color to the span within the logo */
   font-size: 32px; /* Matches the logo h1 font size */
 }
 
@@ -201,7 +220,8 @@ h6 {
   background: var(--accent-color); /* Adds accent color background on hover */
 }
 
-@media (max-width: 1200px) { /* Styles for screens smaller than 1200px */
+@media (max-width: 1200px) {
+  /* Styles for screens smaller than 1200px */
   .header .logo {
     order: 1; /* Positions logo first in flex order */
   }
@@ -217,27 +237,39 @@ h6 {
   }
 }
 
-.scrolled .header { /* Styles applied to the header when the page is scrolled */
+.scrolled .header {
+  /* Styles applied to the header when the page is scrolled */
   box-shadow: 0px 0 18px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
 }
 
 /* Index Page Header
 ------------------------------*/
 .index-page .header {
-  --background-color: rgba(0, 0, 0, 0); /* Makes the header transparent on the index page initially */
+  --background-color: rgba(
+    0,
+    0,
+    0,
+    0
+  ); /* Makes the header transparent on the index page initially */
 }
 
 /* Index Page Header on Scroll
 ------------------------------*/
 .index-page.scrolled .header {
-  --background-color: rgba(0, 0, 0, 0.8); /* Makes the header semi-transparent black when scrolled on the index page */
+  --background-color: rgba(
+    0,
+    0,
+    0,
+    0.8
+  ); /* Makes the header semi-transparent black when scrolled on the index page */
 }
 
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
 /* Navmenu - Desktop */
-@media (min-width: 1200px) { /* Styles for desktop navigation (screens 1200px and wider) */
+@media (min-width: 1200px) {
+  /* Styles for desktop navigation (screens 1200px and wider) */
   .navmenu {
     padding: 0; /* Removes padding */
   }
@@ -269,7 +301,8 @@ h6 {
   }
 
   .navmenu a i,
-  .navmenu a:focus i { /* Styles for dropdown icons */
+  .navmenu a:focus i {
+    /* Styles for dropdown icons */
     font-size: 12px; /* Icon size */
     line-height: 0; /* Adjusts line height */
     margin-left: 5px; /* Adds space to the left of the icon */
@@ -283,12 +316,15 @@ h6 {
   .navmenu li:hover > a,
   .navmenu .active,
   .navmenu .active:focus {
-    color: var(--nav-hover-color); /* Changes link color on hover or when active */
+    color: var(
+      --nav-hover-color
+    ); /* Changes link color on hover or when active */
   }
 }
 
 /* Navmenu - Mobile */
-@media (max-width: 1199px) { /* Styles for mobile navigation (screens smaller than 1200px) */
+@media (max-width: 1199px) {
+  /* Styles for mobile navigation (screens smaller than 1200px) */
   .mobile-nav-toggle {
     color: var(--nav-color); /* Sets the color of the hamburger icon */
     font-size: 28px; /* Sets the icon size */
@@ -311,7 +347,9 @@ h6 {
     padding: 10px 0; /* Adds vertical padding inside the menu */
     margin: 0; /* Removes default margin */
     border-radius: 6px; /* Rounds the corners of the menu */
-    background-color: var(--nav-mobile-background-color); /* Sets the background color */
+    background-color: var(
+      --nav-mobile-background-color
+    ); /* Sets the background color */
     overflow-y: auto; /* Allows scrolling if menu items exceed height */
     transition: 0.3s; /* Smooth transition for showing/hiding */
     z-index: 9998; /* Ensures menu is above content */
@@ -333,7 +371,8 @@ h6 {
   }
 
   .navmenu a i,
-  .navmenu a:focus i { /* Styles for mobile dropdown icons */
+  .navmenu a:focus i {
+    /* Styles for mobile dropdown icons */
     font-size: 12px; /* Icon size */
     line-height: 0; /* Adjusts line height */
     margin-left: 5px; /* Adds space to the left */
@@ -344,30 +383,43 @@ h6 {
     justify-content: center; /* Horizontally centers icon */
     border-radius: 50%; /* Makes the background circular */
     transition: 0.3s; /* Smooth transition */
-    background-color: color-mix(in srgb, var(--accent-color), white 90%); /* Light accent background */
+    background-color: color-mix(
+      in srgb,
+      var(--accent-color),
+      white 90%
+    ); /* Light accent background */
   }
 
   .navmenu a i:hover,
   .navmenu a:focus i:hover {
-    background-color: color-mix(in srgb, var(--accent-color), white 90%); /* Keeps background color on icon hover */
+    background-color: color-mix(
+      in srgb,
+      var(--accent-color),
+      white 90%
+    ); /* Keeps background color on icon hover */
   }
 
   .navmenu a:hover,
   .navmenu .active,
   .navmenu .active:focus {
-    background-color: var(--nav-dropdown-hover-color); /* Changes background on link hover/active */
+    background-color: var(
+      --nav-dropdown-hover-color
+    ); /* Changes background on link hover/active */
   }
 
   .navmenu .active i,
-  .navmenu .active:focus i { /* Rotates dropdown icon when active */
+  .navmenu .active:focus i {
+    /* Rotates dropdown icon when active */
     transform: rotate(180deg);
   }
 
-  .mobile-nav-active { /* Class added to body when mobile menu is open */
+  .mobile-nav-active {
+    /* Class added to body when mobile menu is open */
     overflow: hidden; /* Prevents scrolling of the page content */
   }
 
-  .mobile-nav-active .mobile-nav-toggle { /* Styles for the toggle icon when menu is open */
+  .mobile-nav-active .mobile-nav-toggle {
+    /* Styles for the toggle icon when menu is open */
     color: #fff; /* Changes icon color (likely to contrast with overlay) */
     position: absolute; /* Positions relative to viewport or positioned parent */
     font-size: 32px; /* Icon size */
@@ -377,7 +429,8 @@ h6 {
     z-index: 9999; /* Ensures toggle is above the overlay */
   }
 
-  .mobile-nav-active .navmenu { /* Styles for the navmenu container when open */
+  .mobile-nav-active .navmenu {
+    /* Styles for the navmenu container when open */
     position: fixed; /* Positions relative to the viewport */
     overflow: hidden; /* Prevents internal scrolling */
     inset: 0; /* Covers the entire viewport */
@@ -385,7 +438,8 @@ h6 {
     transition: 0.3s; /* Smooth transition */
   }
 
-  .mobile-nav-active .navmenu > ul { /* Shows the menu list when active */
+  .mobile-nav-active .navmenu > ul {
+    /* Shows the menu list when active */
     display: block;
   }
 }
@@ -402,7 +456,8 @@ h6 {
   transition: all 0.6s ease-out; /* Smooth fade-out transition */
 }
 
-#preloader:before { /* Creates the spinning loader element */
+#preloader:before {
+  /* Creates the spinning loader element */
   content: ""; /* Required for pseudo-elements */
   position: fixed; /* Positions relative to the viewport */
   top: calc(50% - 30px); /* Centers vertically */
@@ -415,7 +470,8 @@ h6 {
   animation: animate-preloader 1.5s linear infinite; /* Applies the spinning animation */
 }
 
-@keyframes animate-preloader { /* Defines the preloader spinning animation */
+@keyframes animate-preloader {
+  /* Defines the preloader spinning animation */
   0% {
     transform: rotate(0deg); /* Start rotation */
   }
@@ -442,18 +498,24 @@ h6 {
   transition: all 0.4s; /* Smooth transition for visibility and hover */
 }
 
-.scroll-top i { /* Styles for the icon inside the button */
+.scroll-top i {
+  /* Styles for the icon inside the button */
   font-size: 24px; /* Icon size */
   color: var(--contrast-color); /* Icon color */
   line-height: 0; /* Adjusts line height */
 }
 
 .scroll-top:hover {
-  background-color: color-mix(in srgb, var(--accent-color), transparent 20%); /* Slightly fades background on hover */
+  background-color: color-mix(
+    in srgb,
+    var(--accent-color),
+    transparent 20%
+  ); /* Slightly fades background on hover */
   color: var(--contrast-color); /* Keeps icon color */
 }
 
-.scroll-top.active { /* Styles when the button should be visible */
+.scroll-top.active {
+  /* Styles when the button should be visible */
   visibility: visible; /* Makes it visible */
   opacity: 1; /* Makes it fully opaque */
 }
@@ -461,8 +523,10 @@ h6 {
 /*--------------------------------------------------------------
 # Disable aos animation delay on mobile devices
 --------------------------------------------------------------*/
-@media screen and (max-width: 768px) { /* Targets screens up to 768px wide */
-  [data-aos-delay] { /* Selects elements with AOS delay attribute */
+@media screen and (max-width: 768px) {
+  /* Targets screens up to 768px wide */
+  [data-aos-delay] {
+    /* Selects elements with AOS delay attribute */
     transition-delay: 0 !important; /* Removes animation delay on mobile for better performance/UX */
   }
 }
@@ -487,12 +551,18 @@ h6 {
   font-weight: 700; /* Makes title bold */
 }
 
-.page-title nav { /* Styles for the breadcrumb navigation container */
-  background-color: color-mix(in srgb, var(--default-color), transparent 95%); /* Very light background */
+.page-title nav {
+  /* Styles for the breadcrumb navigation container */
+  background-color: color-mix(
+    in srgb,
+    var(--default-color),
+    transparent 95%
+  ); /* Very light background */
   padding: 20px 0; /* Adds vertical padding */
 }
 
-.page-title nav ol { /* Styles for the ordered list used for breadcrumbs */
+.page-title nav ol {
+  /* Styles for the ordered list used for breadcrumbs */
   display: flex; /* Lays out breadcrumbs horizontally */
   flex-wrap: wrap; /* Allows wrapping on smaller screens */
   list-style: none; /* Removes default list styling */
@@ -502,15 +572,21 @@ h6 {
   font-weight: 400; /* Sets font weight */
 }
 
-.page-title nav ol li + li { /* Selects every list item except the first */
+.page-title nav ol li + li {
+  /* Selects every list item except the first */
   padding-left: 10px; /* Adds space to the left */
 }
 
-.page-title nav ol li + li::before { /* Adds the separator between breadcrumbs */
+.page-title nav ol li + li::before {
+  /* Adds the separator between breadcrumbs */
   content: "/"; /* Specifies the separator character */
   display: inline-block; /* Allows padding */
   padding-right: 10px; /* Adds space after the separator */
-  color: color-mix(in srgb, var(--default-color), transparent 70%); /* Sets separator color */
+  color: color-mix(
+    in srgb,
+    var(--default-color),
+    transparent 70%
+  ); /* Sets separator color */
 }
 
 /*--------------------------------------------------------------
@@ -519,13 +595,16 @@ h6 {
 section,
 .section {
   color: var(--default-color); /* Default text color within sections */
-  background-color: var(--background-color); /* Default background color for sections */
+  background-color: var(
+    --background-color
+  ); /* Default background color for sections */
   padding: 60px 0; /* Default vertical padding for sections */
   scroll-margin-top: 80px; /* Offset for scroll-to-anchor to account for fixed header height */
   overflow: clip; /* Prevents content overflow from affecting layout */
 }
 
-@media (max-width: 1199px) { /* Adjusts scroll margin for smaller screens if header height changes */
+@media (max-width: 1199px) {
+  /* Adjusts scroll margin for smaller screens if header height changes */
   section,
   .section {
     scroll-margin-top: 58px; /* Reduced offset for potentially shorter fixed header */
@@ -540,7 +619,8 @@ section,
   position: relative; /* Establishes positioning context */
 }
 
-.section-title h2 { /* Typically used for the smaller, uppercase subtitle */
+.section-title h2 {
+  /* Typically used for the smaller, uppercase subtitle */
   font-size: 14px; /* Small font size */
   font-weight: 500; /* Medium weight */
   padding: 0; /* Removes padding */
@@ -548,11 +628,16 @@ section,
   margin: 0; /* Removes margin */
   letter-spacing: 1.5px; /* Adds letter spacing */
   text-transform: uppercase; /* Makes text uppercase */
-  color: color-mix(in srgb, var(--default-color), transparent 50%); /* Lighter default color */
+  color: color-mix(
+    in srgb,
+    var(--default-color),
+    transparent 50%
+  ); /* Lighter default color */
   position: relative; /* Needed for the ::after pseudo-element */
 }
 
-.section-title h2::after { /* Creates the line decoration after the subtitle */
+.section-title h2::after {
+  /* Creates the line decoration after the subtitle */
   content: ""; /* Required for pseudo-elements */
   width: 120px; /* Width of the line */
   height: 1px; /* Height of the line */
@@ -561,7 +646,8 @@ section,
   margin: 4px 10px; /* Positions the line vertically and adds space */
 }
 
-.section-title p { /* Typically used for the main, larger section heading */
+.section-title p {
+  /* Typically used for the main, larger section heading */
   color: var(--heading-color); /* Uses heading color */
   margin: 0; /* Removes default margin */
   font-size: 36px; /* Large font size */
@@ -581,13 +667,21 @@ section,
   color: white; /* Default text color for this section */
 }
 
-@keyframes skyShift { /* Defines the background gradient animation */
-  0% { background-position: 0% 50%; } /* Start position */
-  50% { background-position: 100% 50%; } /* Mid position */
-  100% { background-position: 0% 50%; } /* End position (loops) */
+@keyframes skyShift {
+  /* Defines the background gradient animation */
+  0% {
+    background-position: 0% 50%;
+  } /* Start position */
+  50% {
+    background-position: 100% 50%;
+  } /* Mid position */
+  100% {
+    background-position: 0% 50%;
+  } /* End position (loops) */
 }
 
-.road-background { /* Container for the road SVG */
+.road-background {
+  /* Container for the road SVG */
   position: absolute; /* Positions relative to the .home container */
   bottom: 0; /* Aligns to the bottom */
   width: 100%; /* Full width */
@@ -595,34 +689,41 @@ section,
   z-index: 0; /* Places it behind other content like characters */
 }
 
-.road-svg { /* The SVG element itself */
+.road-svg {
+  /* The SVG element itself */
   width: 100%; /* Full width */
   height: 100%; /* Full height */
   position: absolute; /* Positions relative to .road-background */
   bottom: 0; /* Aligns to the bottom */
 }
 
-.road-svg line { /* Styles for the dashed lines in the SVG */
+.road-svg line {
+  /* Styles for the dashed lines in the SVG */
   animation: dash-move 1.5s linear infinite; /* Animates the dashes */
 }
 
-@keyframes dash-move { /* Defines the dashed line movement animation */
-  from { stroke-dashoffset: 0; } /* Start offset */
-  to { stroke-dashoffset: 10; } /* End offset (creates illusion of movement) */
+@keyframes dash-move {
+  /* Defines the dashed line movement animation */
+  from {
+    stroke-dashoffset: 0;
+  } /* Start offset */
+  to {
+    stroke-dashoffset: 10;
+  } /* End offset (creates illusion of movement) */
 }
 
-.light-end { /* Simulates light rays at the vanishing point */
+.light-end {
+  /* Simulates light rays at the vanishing point */
   position: absolute; /* Positions relative to .home */
   top: 12%; /* Vertical position matching road perspective */
   left: 50%; /* Horizontal center */
   transform: translateX(-50%); /* Precise centering */
   width: 300px; /* Width of the light effect */
   height: 300px; /* Height of the light effect */
-  background: conic-gradient( /* Creates radial light rays */
-    rgba(247, 230, 4, 0.988) 0deg,
+  background: conic-gradient(
+    /* Creates radial light rays */ rgba(247, 230, 4, 0.988) 0deg,
     rgba(255, 255, 255, 0) 20deg,
-    /* ... repeated pattern for rays ... */
-    rgba(247, 230, 4, 0.988) 360deg
+    /* ... repeated pattern for rays ... */ rgba(247, 230, 4, 0.988) 360deg
   );
   border-radius: 50%; /* Makes it circular */
   filter: blur(10px); /* Blurs the edges for a softer effect */
@@ -631,88 +732,27 @@ section,
   animation: rotateRays 60s linear infinite; /* Applies rotation animation */
 }
 
-@keyframes rotateRays { /* Defines the light rays rotation */
-  from { transform: translateX(-50%) rotate(0deg); } /* Start rotation */
-  to { transform: translateX(-50%) rotate(360deg); } /* End rotation */
+@keyframes rotateRays {
+  /* Defines the light rays rotation */
+  from {
+    transform: translateX(-50%) rotate(0deg);
+  } /* Start rotation */
+  to {
+    transform: translateX(-50%) rotate(360deg);
+  } /* End rotation */
 }
 
-@keyframes pulse { /* Optional pulsing animation (not currently applied in the HTML structure shown) */
-  0% { opacity: 0.7; transform: translateX(-50%) scale(1); } /* Start state */
-  50% { opacity: 1; transform: translateX(-50%) scale(1.1); } /* Mid state (larger, more opaque) */
-  100% { opacity: 0.7; transform: translateX(-50%) scale(1); } /* End state */
-}
-
-/* Characters */
-.person { /* Styling for the walking person figures */
-  position: absolute; /* Positions relative to .home */
-  bottom: 0; /* Starts at the bottom */
-  width: 20px; /* Width of the figure */
-  height: 60px; /* Height of the figure */
-  z-index: 1; /* Places above the road and light */
-  animation: moveUp 16s linear infinite; /* Applies the upward movement and scaling animation */
-}
-
-.person.first { /* Positions the first person */
-  left: 48%;
-}
-.person.second { /* Positions the second person */
-  left: 52%;
-}
-
-.head { /* Styles the head part */
-  width: 20px;
-  height: 20px;
-  background: white;
-  border-radius: 50%;
+canvas {
   position: absolute;
   top: 0;
   left: 0;
+  width: 100%; /* Matches container */
+  height: 100%; /* Matches container */
+  display: block;
 }
 
-.body { /* Styles the body part */
-  width: 8px;
-  height: 30px;
-  background: white;
-  position: absolute;
-  top: 20px;
-  left: 6px;
-}
-
-.left-leg,
-.right-leg { /* Common styles for legs */
-  width: 6px;
-  height: 20px;
-  background: white;
-  position: absolute;
-  top: 50px;
-}
-
-.left-leg { /* Styles and animates the left leg */
-  left: 2px;
-  animation: walkLeft 1s ease-in-out infinite alternate;
-}
-
-.right-leg { /* Styles and animates the right leg */
-  left: 12px;
-  animation: walkRight 1s ease-in-out infinite alternate;
-}
-
-@keyframes walkLeft { /* Animation for the left leg */
-  from { transform: rotate(10deg); } /* Forward swing */
-  to { transform: rotate(-10deg); } /* Backward swing */
-}
-
-@keyframes walkRight { /* Animation for the right leg */
-  from { transform: rotate(-10deg); } /* Backward swing */
-  to { transform: rotate(10deg); } /* Forward swing */
-}
-
-@keyframes moveUp { /* Animation for the character moving towards the vanishing point */
-  0% { transform: translateY(0) scale(1); } /* Start position and size */
-  100% { transform: translateY(-200px) scale(0.7); } /* End position (up) and size (smaller) */
-}
-
-.home-content { /* Container for the text content over the animation */
+.home-content {
+  /* Container for the text content over the animation */
   position: absolute; /* Positions relative to .home */
   top: 50%; /* Vertically centers (approximately) */
   width: 100%; /* Full width */
@@ -721,18 +761,21 @@ section,
   z-index: 2; /* Places it above the characters and background elements */
 }
 
-.home-content.hidden { /* Class to hide the content (if needed) */
+.home-content.hidden {
+  /* Class to hide the content (if needed) */
   opacity: 0;
 }
 
-.home-content h2 { /* Styles the main heading */
+.home-content h2 {
+  /* Styles the main heading */
   font-size: 2.3rem; /* Sets font size */
   margin: 0; /* Removes margin */
   color: black; /* Text color */
   text-shadow: 2px 2px 6px rgb(144, 140, 140); /* Adds a shadow for better readability */
 }
 
-.home-content p { /* Styles the paragraph text */
+.home-content p {
+  /* Styles the paragraph text */
   font-size: 1.5rem; /* Sets font size */
   margin-top: 1rem; /* Adds space above the paragraph */
   color: black; /* Text color */
@@ -741,51 +784,64 @@ section,
 /*--------------------------------------------------------------
 # About Section
 --------------------------------------------------------------*/
-.about .content h3 { /* Styles the subheading within the about content */
+.about .content h3 {
+  /* Styles the subheading within the about content */
   font-size: 1.75rem; /* Font size */
   font-weight: 700; /* Bold weight */
 }
 
-.about .content .fst-italic { /* Styles italic text within the about content */
-  color: color-mix(in srgb, var(--default-color), var(--contrast-color) 50%); /* Mixes default and contrast colors */
+.about .content .fst-italic {
+  /* Styles italic text within the about content */
+  color: color-mix(
+    in srgb,
+    var(--default-color),
+    var(--contrast-color) 50%
+  ); /* Mixes default and contrast colors */
 }
 
-.about .content ul { /* Styles the unordered list */
+.about .content ul {
+  /* Styles the unordered list */
   list-style: none; /* Removes default bullet points */
   padding: 0; /* Removes default padding */
 }
 
-.about .content ul li { /* Styles list items */
+.about .content ul li {
+  /* Styles list items */
   padding: 10px 0 0 0; /* Adds padding above each item */
   display: flex; /* Aligns icon and text */
 }
 
-.about .content ul i { /* Styles icons within list items */
+.about .content ul i {
+  /* Styles icons within list items */
   color: var(--accent-color); /* Uses accent color for icons */
   margin-right: 0.5rem; /* Adds space between icon and text */
   line-height: 1.2; /* Adjusts line height */
   font-size: 1.25rem; /* Sets icon size */
 }
 
-.about .content p:last-child { /* Selects the last paragraph in the content */
+.about .content p:last-child {
+  /* Selects the last paragraph in the content */
   margin-bottom: 0; /* Removes bottom margin */
 }
 
 /*--------------------------------------------------------------
 # Stats Section
 --------------------------------------------------------------*/
-.stats .stats-item { /* Styles individual stat items */
+.stats .stats-item {
+  /* Styles individual stat items */
   padding: 10px; /* Adds padding around each item */
 }
 
-.stats .stats-item i { /* Styles the icon in a stat item */
+.stats .stats-item i {
+  /* Styles the icon in a stat item */
   font-size: 44px; /* Icon size */
   color: var(--accent-color); /* Uses accent color */
   line-height: 0; /* Adjusts line height */
   margin-right: 15px; /* Adds space between icon and text/number */
 }
 
-.stats .stats-item .purecounter { /* Styles the animated number */
+.stats .stats-item .purecounter {
+  /* Styles the animated number */
   color: var(--heading-color); /* Uses heading color */
   font-size: 40px; /* Large font size */
   display: block; /* Makes it a block element */
@@ -793,8 +849,13 @@ section,
   line-height: 40px; /* Sets line height */
 }
 
-.stats .stats-item p { /* Styles the descriptive text below the number */
-  color: color-mix(in srgb, var(--default-color), transparent 40%); /* Lighter text color */
+.stats .stats-item p {
+  /* Styles the descriptive text below the number */
+  color: color-mix(
+    in srgb,
+    var(--default-color),
+    transparent 40%
+  ); /* Lighter text color */
   padding: 15px 0 0 0; /* Adds padding above */
   margin: 0; /* Removes default margin */
   font-family: var(--heading-font); /* Uses heading font */
@@ -804,20 +865,25 @@ section,
 /*--------------------------------------------------------------
 # Team Section
 --------------------------------------------------------------*/
-.team .team-member { /* Styles individual team member cards */
-  background-color: var(--surface-color); /* Uses surface color for card background */
+.team .team-member {
+  /* Styles individual team member cards */
+  background-color: var(
+    --surface-color
+  ); /* Uses surface color for card background */
   overflow: hidden; /* Hides overflowing content (like social icons initially) */
   border-radius: 5px; /* Rounds card corners */
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
   height: 100%; /* Ensures cards in a row have the same height */
 }
 
-.team .team-member .member-img { /* Container for the member's image */
+.team .team-member .member-img {
+  /* Container for the member's image */
   position: relative; /* Needed for absolute positioning of social icons */
   overflow: hidden; /* Hides any image overflow */
 }
 
-.team .team-member .social { /* Container for social media links */
+.team .team-member .social {
+  /* Container for social media links */
   position: absolute; /* Positions relative to .member-img */
   left: 0; /* Aligns to the left */
   bottom: 30px; /* Initial position from the bottom (moves up on hover) */
@@ -827,9 +893,18 @@ section,
   text-align: center; /* Centers the icons */
 }
 
-.team .team-member .social a { /* Styles individual social icons */
-  background: color-mix(in srgb, var(--contrast-color), transparent 25%); /* Semi-transparent background */
-  color: color-mix(in srgb, var(--default-color), transparent 20%); /* Lighter icon color */
+.team .team-member .social a {
+  /* Styles individual social icons */
+  background: color-mix(
+    in srgb,
+    var(--contrast-color),
+    transparent 25%
+  ); /* Semi-transparent background */
+  color: color-mix(
+    in srgb,
+    var(--default-color),
+    transparent 20%
+  ); /* Lighter icon color */
   margin: 0 3px; /* Adds horizontal spacing between icons */
   border-radius: 4px; /* Rounds icon background corners */
   width: 36px; /* Sets width */
@@ -840,34 +915,44 @@ section,
   align-items: center; /* Vertically centers the icon */
 }
 
-.team .team-member .social a:hover { /* Styles social icons on hover */
+.team .team-member .social a:hover {
+  /* Styles social icons on hover */
   color: var(--contrast-color); /* Changes icon color */
   background: var(--accent-color); /* Changes background to accent color */
 }
 
-.team .team-member .social i { /* Styles the icon font itself */
+.team .team-member .social i {
+  /* Styles the icon font itself */
   font-size: 18px; /* Icon size */
   line-height: 0; /* Adjusts line height */
 }
 
-.team .team-member .member-info { /* Container for member's name and title */
+.team .team-member .member-info {
+  /* Container for member's name and title */
   padding: 25px 15px; /* Adds padding */
 }
 
-.team .team-member .member-info h4 { /* Styles member's name */
+.team .team-member .member-info h4 {
+  /* Styles member's name */
   font-weight: 700; /* Bold weight */
   margin-bottom: 5px; /* Adds space below the name */
   font-size: 18px; /* Font size */
 }
 
-.team .team-member .member-info span { /* Styles member's title/role */
+.team .team-member .member-info span {
+  /* Styles member's title/role */
   display: block; /* Makes it take its own line */
   font-size: 13px; /* Smaller font size */
   font-weight: 400; /* Normal weight */
-  color: color-mix(in srgb, var(--default-color), transparent 40%); /* Lighter text color */
+  color: color-mix(
+    in srgb,
+    var(--default-color),
+    transparent 40%
+  ); /* Lighter text color */
 }
 
-.team .team-member:hover .social { /* Reveals social icons on card hover */
+.team .team-member:hover .social {
+  /* Reveals social icons on card hover */
   opacity: 1; /* Makes icons visible */
   bottom: 15px; /* Moves icons up slightly */
 }
@@ -875,23 +960,27 @@ section,
 /*--------------------------------------------------------------
 # Choices Section (Text Styling)
 --------------------------------------------------------------*/
-#choices p { /* Styles the paragraph text within the #choices section */
+#choices p {
+  /* Styles the paragraph text within the #choices section */
   font-size: 1.5rem; /* Sets font size */
   margin-top: 1rem; /* Adds space above */
   color: black; /* Sets text color */
 }
 
 /* Style for the Behind the Scenes video section */
-.bst { /* Generic section class, likely for the "Behind the Scenes" section */
+.bst {
+  /* Generic section class, likely for the "Behind the Scenes" section */
   padding-bottom: 60px; /* Add some padding below the section */
 }
 
-.bts-video { /* Container for the behind-the-scenes video iframe */
+.bts-video {
+  /* Container for the behind-the-scenes video iframe */
   margin-top: 30px; /* Add some space between the title and the video */
   text-align: center; /* Center the video iframe */
 }
 
-.bts-video iframe { /* Styles the iframe itself */
+.bts-video iframe {
+  /* Styles the iframe itself */
   max-width: 100%; /* Make the iframe responsive within its container */
   width: 90%; /* Adjust the width as needed, default is 90% */
   height: 600px; /* Set a fixed height (consider aspect-ratio for better responsiveness) */
@@ -900,7 +989,8 @@ section,
 }
 
 /* Optional: Adjust styles for smaller screens */
-@media (max-width: 768px) { /* Targets smaller screens */
+@media (max-width: 768px) {
+  /* Targets smaller screens */
   .bts-video iframe {
     width: 100%; /* Make it full width on smaller screens */
     /* Consider adjusting height or using aspect-ratio here too */
@@ -924,11 +1014,11 @@ section,
   /* Note: This overrides the global center alignment for these elements within this specific context */
 }
 
-
 /*--------------------------------------------------------------
 # Main Video Section (Interactive Video)
 --------------------------------------------------------------*/
-.video { /* Container for the main interactive video section */
+.video {
+  /* Container for the main interactive video section */
   padding-bottom: 60px; /* Add some padding below the section */
   margin-top: 30px; /* Add some space between the title and the video */
   text-align: center; /* Center the video element */
@@ -943,7 +1033,8 @@ section,
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
 }
 
-#mainVideo { /* Container specifically for the HTML5 video element and its overlay */
+#mainVideo {
+  /* Container specifically for the HTML5 video element and its overlay */
   margin-top: 30px; /* Space above the video container */
   width: 90%; /* Sets the width of the container */
   max-width: 100%; /* Prevents exceeding parent width */
@@ -952,14 +1043,16 @@ section,
   background-color: #000; /* Black background, useful if video doesn't load */
 }
 
-#mainVideo video { /* Styles the HTML5 video element */
+#mainVideo video {
+  /* Styles the HTML5 video element */
   width: 100%; /* Makes video fill its container */
   height: 600px; /* Sets a fixed height (consider aspect-ratio) */
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
   display: block; /* Removes extra space below the video element */
 }
 
-.choice-overlay { /* The overlay div appearing over the video for choices */
+.choice-overlay {
+  /* The overlay div appearing over the video for choices */
   position: absolute; /* Positions relative to the #mainVideo container */
   display: none; /* Initially hidden, shown via JavaScript */
   top: 0; /* Covers from the top */
@@ -973,8 +1066,8 @@ section,
   gap: 20px; /* Adds space between choice buttons */
 }
 
-
-.choice-overlay button { /* Styles the choice buttons within the overlay */
+.choice-overlay button {
+  /* Styles the choice buttons within the overlay */
   background-color: var(--accent-color); /* Uses accent color for background */
   color: var(--contrast-color); /* Uses contrast color for text */
   border: none; /* Removes default border */
@@ -988,7 +1081,8 @@ section,
   z-index: 10; /* Ensures buttons are clickable above the overlay background */
 }
 
-.choice-overlay button:hover { /* Styles buttons on hover */
+.choice-overlay button:hover {
+  /* Styles buttons on hover */
   transform: scale(1.1); /* Slightly enlarges the button */
   background-color: #ffd571; /* Lightens the accent color */
 }

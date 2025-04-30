@@ -2,15 +2,20 @@
 const canvas = document.getElementById("canvas");
 const c = canvas.getContext("2d");
 
-// Set canvas to full window size
-canvas.width = window.innerWidth;
-canvas.height = window.innerHeight;
+let vanishingPoint = { x: 0, y: 0 };
 
-// Define the vanishing point for perspective (top of the road)
-const vanishingPoint = {
-  x: canvas.width / 2,
-  y: canvas.height * 0.25,
-};
+//Resize canvas and update vanishing point
+function resizeCanvas() {
+  canvas.width = canvas.clientWidth;
+  canvas.height = canvas.clientHeight;
+  vanishingPoint = {
+    x: canvas.width / 2,
+    y: canvas.height * 0.25,
+  };
+}
+
+window.addEventListener("resize", resizeCanvas);
+resizeCanvas(); // Initial setup
 
 // Draw the sky using a vertical gradient
 function drawSky() {
