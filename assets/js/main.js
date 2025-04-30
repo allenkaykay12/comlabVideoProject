@@ -263,23 +263,9 @@ function playVideo(direction) {
 
   // After alt video ends, reset to main video and let user choose again
   video.onended = () => {
-    video.src = "./assets/video/WHY Video.mp4"; // Reset to main video
+    video.src = "./assets/video/mainVideo.mp4"; // Reset to main video
     video.load();
     video.pause(); // Pause the video and the user can choose to replay
-    window.location.href = "#video"; // Scroll to video
-  };
+    window.location.href = "#video"; // Scroll to video
+  };
 }
-
-const iframe = document.querySelector('iframe');
-setInterval(() => {
-  const video = iframe.contentDocument.querySelector('video');
-  if (video.currentTime === video.duration) {
-    // Create and show popup
-    Swal.fire({
-      title: 'Video Ended',
-      text: 'Thank you for watching!',
-      icon: 'info',
-      confirmButtonText: 'OK'
-    });
-  }
-}, 1000);
