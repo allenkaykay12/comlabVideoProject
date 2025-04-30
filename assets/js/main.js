@@ -269,3 +269,17 @@ function playVideo(direction) {
     window.location.href = "#video"; // Scroll to video
   };
 }
+
+const iframe = document.querySelector('iframe');
+setInterval(() => {
+  const video = iframe.contentDocument.querySelector('video');
+  if (video.currentTime === video.duration) {
+    // Create and show popup
+    Swal.fire({
+      title: 'Video Ended',
+      text: 'Thank you for watching!',
+      icon: 'info',
+      confirmButtonText: 'OK'
+    });
+  }
+}, 1000);
