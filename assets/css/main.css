@@ -979,11 +979,22 @@ canvas {
   text-align: center; /* Center the video iframe */
 }
 
+.bts-video-wrapper {
+  position: relative;
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
+  overflow: hidden;
+}
+
 .bts-video iframe {
   /* Styles the iframe itself */
-  max-width: 100%; /* Make the iframe responsive within its container */
-  width: 90%; /* Adjust the width as needed, default is 90% */
-  height: 600px; /* Set a fixed height (consider aspect-ratio for better responsiveness) */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; /* Make the iframe responsive within its container */
+  height: 100%; /* Set a fixed height (consider aspect-ratio for better responsiveness) */
   border: 0; /* Remove default iframe border */
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
 }

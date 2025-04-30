@@ -1,24 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" /> <!-- Specifies the character encoding for the document -->
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" /> <!-- Configures the viewport for responsive design -->
-    <title>Video Project</title> <!-- Sets the title that appears in the browser tab -->
-    <meta name="description" content="" /> <!-- Provides a brief description of the page for SEO -->
-    <meta name="keywords" content="" /> <!-- Defines keywords for search engines -->
+    <meta charset="utf-8" />
+    <!-- Specifies the character encoding for the document -->
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <!-- Configures the viewport for responsive design -->
+    <title>Video Project</title>
+    <!-- Sets the title that appears in the browser tab -->
+    <meta name="description" content="" />
+    <!-- Provides a brief description of the page for SEO -->
+    <meta name="keywords" content="" />
+    <!-- Defines keywords for search engines -->
 
     <!-- SweetAlert2 CSS for custom alert popups -->
-    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css" rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css"
+      rel="stylesheet"
+    />
     <!-- SweetAlert2 JavaScript library -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
     <!-- Favicons -->
-    <link href="assets/img/favicon.png" rel="icon" /> <!-- Sets the small icon for the browser tab (favicon) -->
-    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" /> <!-- Sets the icon for Apple devices when added to the home screen -->
+    <link href="assets/img/favicon.png" rel="icon" />
+    <!-- Sets the small icon for the browser tab (favicon) -->
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+    <!-- Sets the icon for Apple devices when added to the home screen -->
 
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com" rel="preconnect" /> <!-- Preconnects to Google Fonts for faster loading -->
-    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin /> <!-- Preconnects to Google Fonts static content -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <!-- Preconnects to Google Fonts for faster loading -->
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
+    <!-- Preconnects to Google Fonts static content -->
     <!-- Loads specific Google Fonts (Roboto, Poppins, Raleway) -->
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
@@ -60,42 +72,60 @@
     ======================================================== -->
   </head>
 
-  <body class="index-page"> <!-- Body tag with a class indicating it's the main index page -->
-    <header id="header" class="header d-flex align-items-center fixed-top"> <!-- Header section, fixed at the top -->
+  <body class="index-page">
+    <!-- Body tag with a class indicating it's the main index page -->
+    <header id="header" class="header d-flex align-items-center fixed-top">
+      <!-- Header section, fixed at the top -->
       <div
         class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between"
-      > <!-- Container for header content, responsive adjustments -->
+      >
+        <!-- Container for header content, responsive adjustments -->
         <a
           href="index.html"
           class="logo d-flex align-items-center me-auto me-lg-0"
-        > <!-- Site logo/link to home -->
+        >
+          <!-- Site logo/link to home -->
           <!-- Uncomment the line below if you also wish to use an image logo -->
           <!-- <img src="assets/img/logo.png" alt=""> -->
-          <h1 class="sitename">Re/Write...</h1> <!-- Site name -->
+          <h1 class="sitename">Re/Write</h1>
+          <!-- Site name -->
         </a>
 
-        <nav id="navmenu" class="navmenu"> <!-- Main navigation menu -->
+        <nav id="navmenu" class="navmenu">
+          <!-- Main navigation menu -->
           <ul>
             <li>
-              <a href="#" class="active">Home</a> <!-- Link to Home section -->
+              <a href="#" class="active">Home</a>
+              <!-- Link to Home section -->
             </li>
-            <li><a href="#about">About the Story</a></li> <!-- Link to About section -->
-            <li><a href="#video">Video</a></li> <!-- Link to Video section -->
-            <li><a href="#bst">Behind the Scenes</a></li> <!-- Link to Behind the Scenes section -->
-            <li><a href="#team">Team</a></li> <!-- Link to Team section -->
+            <li><a href="#about">About the Story</a></li>
+            <!-- Link to About section -->
+            <li><a href="#video">Video</a></li>
+            <!-- Link to Video section -->
+            <li><a href="#bst">Behind the Scenes</a></li>
+            <!-- Link to Behind the Scenes section -->
+            <li><a href="#team">Team</a></li>
+            <!-- Link to Team section -->
           </ul>
-          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i> <!-- Icon for toggling mobile navigation -->
-        </nav> <!-- End main navigation menu -->
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+          <!-- Icon for toggling mobile navigation -->
+        </nav>
+        <!-- End main navigation menu -->
 
-        <a class="btn-getstarted" href="index.html#about">Get Started</a> <!-- Call to action button linking to the About section -->
+        <a class="btn-getstarted" href="index.html#about">Get Started</a>
+        <!-- Call to action button linking to the About section -->
       </div>
-    </header> <!-- End Header section -->
+    </header>
+    <!-- End Header section -->
 
-    <main class="main"> <!-- Main content area of the page -->
+    <main class="main">
+      <!-- Main content area of the page -->
       <!-- Hero Section with Road Background -->
       <section class="home">
-        <div class="road-background"> <!-- Container for the canvas background -->
-          <canvas id="canvas"></canvas> <!-- Canvas element for dynamic background animation -->
+        <div class="road-background">
+          <!-- Container for the canvas background -->
+          <canvas id="canvas"></canvas>
+          <!-- Canvas element for dynamic background animation -->
         </div>
 
         <!-- Text Content overlaying the background -->
@@ -104,165 +134,259 @@
             Two students.<br />
             Two dreams.<br />
             One question.
-          </h2> <!-- Main heading for the hero section -->
+          </h2>
+          <!-- Main heading for the hero section -->
           <p>
             A journey of doubt, discovery, and daring to choose differently.
-          </p> <!-- Subheading or introductory text -->
+          </p>
+          <!-- Subheading or introductory text -->
         </div>
-      </section> <!-- End Hero Section -->
+      </section>
+      <!-- End Hero Section -->
 
       <!-- About Section -->
-      <section id="about" class="about section"> <!-- Section describing the story -->
-        <div class="container section-title" data-aos="fade-up"> <!-- Section title container with animation -->
-          <h2>About the Story</h2> <!-- Main title for the section -->
-          <p>Re/Write</p> <!-- Subtitle for the section -->
-        </div> <!-- End Section title container -->
+      <section id="about" class="about section">
+        <!-- Section describing the story -->
+        <div class="container section-title" data-aos="fade-up">
+          <!-- Section title container with animation -->
+          <h2>About the Story</h2>
+          <!-- Main title for the section -->
+          <p>Re/Write</p>
+          <!-- Subtitle for the section -->
+        </div>
+        <!-- End Section title container -->
         <div
           class="container d-flex justify-content-center align-items-center flex-column text-center"
-        > <!-- Container for the about text, centered -->
-          <div style="max-width: 750px"> <!-- Constrains the width of the text block for readability -->
+        >
+          <!-- Container for the about text, centered -->
+          <div style="max-width: 750px">
+            <!-- Constrains the width of the text block for readability -->
             <p>
               <!-- Detailed description of the film's plot -->
-              The film begins with a montage of NYU Abu Dhabi students answering "What if?", highlighting diverse emotions and reflections, before focusing on Sofia, an Economics major preparing for an exam, and Camila, an Engineering major immersed in her CAD project. Sofia, feeling restless, repeatedly encounters a Creative Writing Workshop poster and eventually attends, reigniting her love for storytelling, while Camila, inspired by her engineering work, grows interested in education and social change, ultimately volunteering as a mentor for first-year students. The narrative then presents a choice: in one path, Sofia switches to Creative Writing and Camila double-majors in Engineering and Social Research and Public Policy; in the other, Sofia stays in Economics but writes as a hobby, and Camila remains in Engineering while pursuing educational projects on the side. The film ends with black screens revealing the characters' lives five years later, illustrating that both switching paths and staying the course can lead to meaningful personal growth.
+              Re/Write is a student-produced interactive short film that
+              explores the quiet courage it takes to question your path and
+              redefine success on your own terms. Set on the NYU Abu Dhabi
+              campus, the film opens with real students responding to the prompt
+              “Re/Write”—sharing thoughts, emotions, and reflections about
+              change, uncertainty, and growth. The story follows Sofia, an
+              Economics major overwhelmed by routine, and Camila, an Engineering
+              student who begins questioning her role in a rapidly changing
+              world. Through chance encounters and shifting self-awareness, both
+              characters are led to a key moment: Should they stay on their
+              current path or take a leap into the unknown?
             </p>
           </div>
         </div>
-      </section> <!-- End About Section -->
+      </section>
+      <!-- End About Section -->
 
       <!-- Video Section -->
-      <section id="video" class="video section"> <!-- Section containing the interactive video -->
-        <div class="container section-title" data-aos="fade-up"> <!-- Section title container with animation -->
-          <h2>Video</h2> <!-- Main title for the section -->
-          <p>Re/Write</p> <!-- Subtitle for the section -->
-        </div> <!-- End Section title container -->
+      <section id="video" class="video section">
+        <!-- Section containing the interactive video -->
+        <div class="container section-title" data-aos="fade-up">
+          <!-- Section title container with animation -->
+          <h2>Video</h2>
+          <!-- Main title for the section -->
+          <p>Re/Write</p>
+          <!-- Subtitle for the section -->
+        </div>
+        <!-- End Section title container -->
 
-        <div id="mainVideo" class="video-container"> <!-- Container for the main video player -->
-          <video width="100%" controls> <!-- HTML5 video player -->
-            <source src="assets/video/mainVideo.mp4" type="video/mp4"> <!-- Source file for the main video -->
-          </video> <!-- End HTML5 video player -->
-          <div id="choices" class="choice-overlay"> <!-- Overlay container for interactive choices -->
-            <button onclick="playVideo('left')">Be Happy</button> <!-- Button for the first choice path -->
-            <button onclick="playVideo('right')">Fit Into Society</button> <!-- Button for the second choice path -->
-          </div> <!-- End choice overlay container -->
-        </div> <!-- End main video container -->
-      </section> <!-- End Video Section -->
+        <div id="mainVideo" class="video-container">
+          <!-- Container for the main video player -->
+          <video width="100%" controls>
+            <!-- HTML5 video player -->
+            <source src="assets/video/mainVideo.mp4" type="video/mp4" />
+            <!-- Source file for the main video -->
+          </video>
+          <!-- End HTML5 video player -->
+          <div id="choices" class="choice-overlay">
+            <!-- Overlay container for interactive choices -->
+            <button onclick="playVideo('left')">Be Happy</button>
+            <!-- Button for the first choice path -->
+            <button onclick="playVideo('right')">Fit Into Society</button>
+            <!-- Button for the second choice path -->
+          </div>
+          <!-- End choice overlay container -->
+        </div>
+        <!-- End main video container -->
+      </section>
+      <!-- End Video Section -->
 
       <!-- Behind the Scenes Section -->
-      <section id="bst" class="bst section"> <!-- Section for the Behind the Scenes content -->
+      <section id="bst" class="bst section">
+        <!-- Section for the Behind the Scenes content -->
         <!-- Section Title -->
-        <div class="container section-title" data-aos="fade-up"> <!-- Section title container with animation -->
-          <h2>Behind the Scenes</h2> <!-- Main title for the section -->
-          <p>Bloopers, Laughs and Memories...</p> <!-- Subtitle for the section -->
-        </div> <!-- End Section Title -->
-        <div class="bts-video"> <!-- Container for the BTS video embed -->
-          <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/C4xWa4kpaEU?si=kjYQD41v1iUsKzCB"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen
-          >
-          </iframe> <!-- Embedded YouTube video player for BTS content -->
-        </div> <!-- End BTS video container -->
-      </section> <!-- End Behind the Scenes Section -->
+        <div class="container section-title" data-aos="fade-up">
+          <!-- Section title container with animation -->
+          <h2>Behind the Scenes</h2>
+          <!-- Main title for the section -->
+          <p>Bloopers, Laughs and Memories...</p>
+          <!-- Subtitle for the section -->
+        </div>
+        <!-- End Section Title -->
+        <div class="bts-video">
+          <!-- Container for the BTS video embed -->
+          <div class="bts-video-wrapper">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/C4xWa4kpaEU?si=kjYQD41v1iUsKzCB"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            >
+            </iframe>
+          </div>
+
+          <!-- Embedded YouTube video player for BTS content -->
+        </div>
+        <!-- End BTS video container -->
+      </section>
+      <!-- End Behind the Scenes Section -->
 
       <!-- Team Section -->
-      <section id="team" class="team section"> <!-- Section introducing the project team -->
+      <section id="team" class="team section">
+        <!-- Section introducing the project team -->
         <!-- Section Title -->
-        <div class="container section-title" data-aos="fade-up"> <!-- Section title container with animation -->
-          <h2>Team</h2> <!-- Main title for the section -->
-          <p>Meet the Team</p> <!-- Subtitle for the section -->
-        </div> <!-- End Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <!-- Section title container with animation -->
+          <h2>Team</h2>
+          <!-- Main title for the section -->
+          <p>Meet the Team</p>
+          <!-- Subtitle for the section -->
+        </div>
+        <!-- End Section Title -->
 
-        <div class="container"> <!-- Container for team member cards -->
-          <div class="row gy-4"> <!-- Bootstrap row for grid layout with vertical gutters -->
+        <div class="container">
+          <!-- Container for team member cards -->
+          <div class="row gy-4">
+            <!-- Bootstrap row for grid layout with vertical gutters -->
             <!-- Team Member 1 -->
             <div
               class="col-lg-3 col-md-6 d-flex align-items-stretch"
               data-aos="fade-up"
               data-aos-delay="100"
-            > <!-- Column for a team member, responsive layout -->
-              <div class="team-member"> <!-- Card representing a team member -->
-                <div class="member-img"> <!-- Container for the member's image -->
+            >
+              <!-- Column for a team member, responsive layout -->
+              <div class="team-member">
+                <!-- Card representing a team member -->
+                <div class="member-img">
+                  <!-- Container for the member's image -->
                   <img
                     src="assets/img/team/arianne.jpeg"
                     class="img-fluid"
                     alt="Arianne's photo"
-                  /> <!-- Team member's image -->
+                  />
+                  <!-- Team member's image -->
                 </div>
-                <div class="member-info"> <!-- Container for member's details -->
-                  <h4>Arianne</h4> <!-- Member's name -->
-                  <span>Project Manager</span> <!-- Member's role -->
+                <div class="member-info">
+                  <!-- Container for member's details -->
+                  <h4>Arianne</h4>
+                  <!-- Member's name -->
+                  <span>Project Manager</span>
+                  <!-- Member's role -->
                 </div>
               </div>
-            </div> <!-- End Team Member 1 -->
+            </div>
+            <!-- End Team Member 1 -->
 
             <!-- Team Member 2 -->
             <div
               class="col-lg-3 col-md-6 d-flex align-items-stretch"
               data-aos="fade-up"
               data-aos-delay="200"
-            > <!-- Column for a team member, responsive layout -->
-              <div class="team-member"> <!-- Card representing a team member -->
-                <div class="member-img"> <!-- Container for the member's image -->
+            >
+              <!-- Column for a team member, responsive layout -->
+              <div class="team-member">
+                <!-- Card representing a team member -->
+                <div class="member-img">
+                  <!-- Container for the member's image -->
                   <img
                     src="assets/img/team/mukhlisa.jpeg"
                     class="img-fluid"
                     alt="Mukhlisa's photo"
-                  /> <!-- Team member's image -->
+                  />
+                  <!-- Team member's image -->
                 </div>
-                <div class="member-info"> <!-- Container for member's details -->
-                  <h4>Mukhlisa</h4> <!-- Member's name -->
-                  <span>Videographer</span> <!-- Member's role -->
+                <div class="member-info">
+                  <!-- Container for member's details -->
+                  <h4>Mukhlisa</h4>
+                  <!-- Member's name -->
+                  <span>Videographer</span>
+                  <!-- Member's role -->
                 </div>
               </div>
-            </div> <!-- End Team Member 2 -->
+            </div>
+            <!-- End Team Member 2 -->
 
             <!-- Team Member 3 -->
             <div
               class="col-lg-3 col-md-6 d-flex align-items-stretch"
               data-aos="fade-up"
               data-aos-delay="300"
-            > <!-- Column for a team member, responsive layout -->
-              <div class="team-member"> <!-- Card representing a team member -->
-                <div class="member-img"> <!-- Container for the member's image -->
+            >
+              <!-- Column for a team member, responsive layout -->
+              <div class="team-member">
+                <!-- Card representing a team member -->
+                <div class="member-img">
+                  <!-- Container for the member's image -->
                   <img
                     src="assets/img/team/alisa.jpeg"
                     class="img-fluid"
                     alt="Alisa's photo"
-                  /> <!-- Team member's image -->
+                  />
+                  <!-- Team member's image -->
                 </div>
-                <div class="member-info"> <!-- Container for member's details -->
-                  <h4>Alisa</h4> <!-- Member's name -->
-                  <span>Creative Director</span> <!-- Member's role -->
+                <div class="member-info">
+                  <!-- Container for member's details -->
+                  <h4>Alisa</h4>
+                  <!-- Member's name -->
+                  <span>Creative Director</span>
+                  <!-- Member's role -->
                 </div>
               </div>
-            </div> <!-- End Team Member 3 -->
+            </div>
+            <!-- End Team Member 3 -->
 
             <!-- Team Member 4 -->
             <div
               class="col-lg-3 col-md-6 d-flex align-items-stretch"
               data-aos="fade-up"
               data-aos-delay="400"
-            > <!-- Column for a team member, responsive layout -->
-              <div class="team-member"> <!-- Card representing a team member -->
-                <div class="member-img"> <!-- Container for the member's image -->
-                  <img src="assets/img/team/me.png" class="img-fluid" alt="Kayesu's photo" /> <!-- Team member's image -->
+            >
+              <!-- Column for a team member, responsive layout -->
+              <div class="team-member">
+                <!-- Card representing a team member -->
+                <div class="member-img">
+                  <!-- Container for the member's image -->
+                  <img
+                    src="assets/img/team/me.png"
+                    class="img-fluid"
+                    alt="Kayesu's photo"
+                  />
+                  <!-- Team member's image -->
                 </div>
-                <div class="member-info"> <!-- Container for member's details -->
-                  <h4>Kayesu</h4> <!-- Member's name -->
-                  <span>Web Developer</span> <!-- Member's role -->
+                <div class="member-info">
+                  <!-- Container for member's details -->
+                  <h4>Kayesu</h4>
+                  <!-- Member's name -->
+                  <span>Web Developer</span>
+                  <!-- Member's role -->
                 </div>
               </div>
-            </div> <!-- End Team Member 4 -->
-          </div> <!-- End row -->
-        </div> <!-- End container for team members -->
-      </section> <!-- End Team Section -->
-
-    </main> <!-- End main content area -->
+            </div>
+            <!-- End Team Member 4 -->
+          </div>
+          <!-- End row -->
+        </div>
+        <!-- End container for team members -->
+      </section>
+      <!-- End Team Section -->
+    </main>
+    <!-- End main content area -->
 
     <!-- Scroll Top Button -->
     <a
@@ -270,10 +394,12 @@
       id="scroll-top"
       class="scroll-top d-flex align-items-center justify-content-center"
       ><i class="bi bi-arrow-up-short"></i
-    ></a> <!-- A button that appears on scroll, allowing users to quickly return to the top of the page -->
+    ></a>
+    <!-- A button that appears on scroll, allowing users to quickly return to the top of the page -->
 
     <!-- Preloader -->
-    <div id="preloader"></div> <!-- An element shown while the page content is loading -->
+    <div id="preloader"></div>
+    <!-- An element shown while the page content is loading -->
 
     <!-- Vendor JS Files -->
     <!-- Bootstrap JavaScript bundle (includes Popper) -->
@@ -299,5 +425,6 @@
     <!-- Custom JavaScript for the template's functionality (navigation, interactive video logic, etc.) -->
     <script src="assets/js/main.js"></script>
 
-  </body>
+     
+  </body>
 </html>
