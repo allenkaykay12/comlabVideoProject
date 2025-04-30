@@ -67,7 +67,7 @@
         <nav id="navmenu" class="navmenu">
           <ul>
             <li>
-              <a href="#home" class="active">Home</a>
+              <a href="#" class="active">Home</a>
             </li>
             <li><a href="#about">About the Story</a></li>
             <li><a href="#video">Video</a></li>
@@ -147,17 +147,13 @@
         <div class="container section-title" data-aos="fade-up">
           <h2>Video</h2>
           <p>Re/Write</p>
-          <div class="video">
+          <div id="mainVideo">
             <video width=100% controls>
               <source src="assets/video/mainVideo.mp4" type="video/mp4"> 
             </video>
           </div>
 
-          <div
-            id="choices"
-            style="display: none; text-align: center; margin-top: 20px"
-          >
-            <p>What would you do?</p>
+          <div id="choices" style="display: none; text-align: center; margin-top: 20px">
             <button onclick="playVideo('left')">Take the Left Path</button>
             <button onclick="playVideo('right')">Take the Right Path</button>
           </div>

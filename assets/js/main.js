@@ -232,7 +232,7 @@
 })();
 
 // video decision logic
-const video = document.getElementById("mainVideo"); // get the main video element
+const video = document.querySelector("#mainVideo video"); // get the main video element
 const choices = document.getElementById("choices"); // get the choices element to display then or hide them
 
 video.addEventListener("ended", () => {
@@ -267,5 +267,5 @@ function playVideo(direction) {
     video.load();
     video.pause(); // Pause the video and the user can choose to replay
     window.location.href = "#video"; // Scroll to video
-  };
+  };
 }
